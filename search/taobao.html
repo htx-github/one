@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			*{padding: 0;margin: 0;}
+			a{text-decoration: none;}
+			ul,li{padding: 0;margin: 0;}
+			#search-container{
+				position: absolute;
+				top: 250px;
+				left: 50%;
+				margin-left: -292px;
+			}
+			#btn-search{
+				background: url(img/search.jpg);width: 122px;height: 40px;border: 0;
+				cursor:pointer;
+			}
+			#ipt-search{
+				padding-left: 5px;
+				border: 0;
+				height: 36px;
+				width: 420px;
+				outline: 0;
+				font-size: 14px;
+			}
+			#search-input{
+				float: left;
+				padding: 2px;
+				background-color: #FF5500;
+				
+			}
+			#search-button{
+				float: left;
+			}
+			#search-tips{
+				float: left;
+				margin-left: 10px;
+			}
+			#search-tips a{
+				height: 20px;
+				line-height: 20px;
+				text-align: center;
+				color: #666666;
+				font-size: 10px;
+			}
+			.search-list ul{
+				padding-left: 18px;
+				list-style: none;
+				display: block;
+				height: 28px;
+				width: 300px;
+			}
+			.search-list li{
+				float: left;
+			}
+			.search-list li a{
+				width: 50px;
+				display: block;
+				text-align: center;
+				height: 28px;
+				line-height: 28px;
+				color: #FF5500;
+				font-size: 14px;
+				
+			}
+			.search-list ul li a.selected {
+				background:#FF5500 ;
+				color: #FFFFFF;
+			}
+			.search-list li a:hover{
+				background: #F9E6E6;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="search-container">
+			<div id="search-tab" class="search-list">
+				<ul>
+					<li ><a href="#" class="selected" >宝贝</a></li>
+					<li ><a href="#">店铺</a></li>
+					<li ><a href="#">天猫</a></li>
+				</ul>
+			</div>
+			<div id="search-panne">
+				<form>
+					<div id="search-input">
+						<input type="text" id="ipt-search"/>
+					</div>
+					<div id="search-button">
+						<button type="submit" id="btn-search"></button>
+					</div>
+					<div id="search-tips">
+						<a href="#">高级<br />搜索</a>
+					</div>
+				</form>
+			</div>
+		</div>
+		<<script>
+			function addEvent(obj,event,fn){
+				if(obj.addEventListener){
+					obj.addEventListener(event,fn,false);
+				}
+				else if(obj.attachEvent){
+					obj.attachEvent("on"+event,fn);
+				}
+				else{
+					obj["on"+event]=fn;
+				}
+			}
+	        function getClass(obj,cls){
+	        	var elements=obj.getElementsByTagName("*");
+	        	var array=[];
+	        	for(var i in elements){
+	        		if(elements[i]==cls){
+	        			array.push(elements[i]);
+	        		}
+	        	}
+	        	return array;
+//	        	for(var i=0;i<elements.length;i++){
+//	        		if(elements[i].className==cls){
+//	        			array.push(elements[i]);
+//	        		}
+//	        	}
+//	        	return array;
+	        }
+
+		</script>
+		<<script src="js/jquery-3.1.1.min.js"></script>
+		<script>
+			$(document).ready(function(){
+				$(".search-list ul li").click(function(){
+					var index=$(this).index();
+					if(index==0){
+						if($(this).find("a").attr("class")=="selected"){
+							$("li").eq(1).find("a").removeClass("selected");
+							$("li").eq(2).find("a").removeClass("selected");
+						}
+						else{
+							$(this).find("a").addClass("selected");
+							$("li").eq(1).find("a").removeClass("selected");
+							$("li").eq(2).find("a").removeClass("selected");
+						}
+					}
+					if(index==1){
+						$(this).find("a").addClass("selected");
+						$("li").eq(0).find("a").removeClass("selected");
+						$("li").eq(2).find("a").removeClass("selected");
+					}
+					if(index==2){
+						$(this).find("a").addClass("selected");
+						$("li").eq(0).find("a").removeClass("selected");
+						$("li").eq(1).find("a").removeClass("selected");
+					}
+				});
+			});
+		</script>
+	</body>
+</html>
