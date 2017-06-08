@@ -1,0 +1,83 @@
+body,ul,ol,li,h1,h2,h3,h4,h5,h6,form,dt,dl,p,fieldset,table,td,img,div,dl,dt,dd,input{
+	margin: 0;
+	padding: 0;
+}
+body{
+	font-size: 14px;
+	font-family: "微软雅黑"
+}
+img{
+	border:none;
+}
+li,ul{
+	list-style:none;
+}
+input,select,textarea{
+	outline:none;
+	border: none;
+	background: none;
+}
+input[type="button"],input[type="submit"],input[type="radio"]{
+	cursor: pointer;
+}
+textarea{
+	resize:none;
+}
+a{
+	text-decoration:none;
+}
+.btn:focus,
+.btn:active:focus,
+.btn.active:focus,
+.btn.focus,
+.btn:active.focus,
+.btn.active.focus {
+    outline: none;          
+}
+.authority{background: rgb(53,139,216);color: white;border-radius: 28px;}
+.hr_100{height: auto;width: 100%;min-width:1030px;border-bottom: 1px solid rgb(204,204,204);}
+.hr_50{height: 50px;}
+.hr_35{height: 35px;}
+.hr_20{height: 20px;}
+.hr_10{height: 10px;}
+.hr_5{height: 5px;}
+.redfont{font-style: normal;color: red;}
+
+
+
+/*悬浮*/
+.tool_boxes:hover,.tool_boxes2:hover,.AddQQ:hover,.servicer:hover,.upgrade1:hover,.authority:hover,.table-btn:hover{opacity: 0.7;cursor: pointer;}
+
+
+
+
+
+/*主页*/
+/*头部*/
+header{width: 100%;min-width:1000px;height: 60px;padding-bottom: 9px;border-bottom: 1px solid rgb(204,204,204);}
+.headerbar{height: 50px;width: 100%;background: rgb(53,139,236);color: white;}
+/*nav-container*/
+.nav-container{height: 40px;margin-top: 5px;}
+.dropdown:hover{background: rgb(132,184,232);height: 50px;margin-top: -5px;}
+.dropdown:hover:after{    
+	content: '';
+    display: inline-block;
+    border: 6px solid transparent;
+    border-top-color: rgb(132,184,232);
+    position: absolute;
+    bottom: -9px;
+    left: 45%;}
+.dropdown-menu{top:106%}
+.nav> li:hover .dropdown-menu {display: block;}
+.navbar-nav > li{float: left;}
+.padding> li > a{padding: 8px 11px;}
+.padding1> li > a{padding: 8px 18px;}
+/*logobar*/
+.logobar{line-height: 50px;}
+.logo{display: inline-block;background: url(../img/logo.png) no-repeat left top;width: 43px;height: 43px;margin-top: 3px;}
+.hd_right_top div{display: inline-block;height: 22px;line-height: 22px;}
+.refresh,.service{display:inline-block;color:white;height:22px ;line-height: 22px;}
+.refresh{background: url(../img/refresh.png) no-repeat left top;padding-left: 19px;}
+.service{background: url(../img/service.png) no-repeat left top;padding-left: 25px;}
+.upgrade {background: white;color: red;display:inline-block;border-radius: 265px;background: white;text-align: center;height: 18px;line-height18px;width: 62px;color: red;}
+.hd_right{padding-top: 3px;margin-right: 10px;}

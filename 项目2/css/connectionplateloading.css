@@ -1,0 +1,10 @@
+section .nav > li > a{padding: 10px 15px;}
+.table-btn.disabled:hover{cursor: not-allowed;}
+#home label{color: #000000;}
+.connectbox{height: 80px;width: 182px;border: 1px solid #ccc;position: absolute;top: 14px;right: 527px;padding: 1px;}
+.connectfont{height: 19px; width:182px;background: rgb(138, 138, 138);color: white;position: absolute;top: 94px;right: 527px;}
+.connectbox .img-responsive{height: 100%;}
+.checkbox3{float: left;margin-right: 40px;}
+.checkboxindex{margin-left: 80px;}
+#ejb .connectbox{right: 4px;top:4px;}
+#ejb .connectfont{right: 4px;top:84px;}

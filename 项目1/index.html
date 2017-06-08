@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title></title>
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/main.css" />
+	</head>
+	<body>
+		<header>
+			<div class="wrap clearfix">
+					<span class="logo_sm fl"></span><a href="#" class="comeback fr">返回<span></span></a>
+			</div>
+		</header>
+		<section>
+			<div class="register_login">
+				<div class="register_login_top clearfix">
+					<a href="#" class="register fl active">注册</a>
+					<a href="#" class="login fr">登录</a>
+				</div>
+				<script src="js/jquery-3.1.1.min.js" type="text/javascript" charset="utf-8"></script>
+				<script type="text/javascript">
+					$(function(){
+						$(".register_login_top a").hover(function(){
+							if($(this).is(".active")){
+								return 0;
+							}
+							else{
+								$(this).addClass("active")
+									.siblings().removeClass("active");
+							}
+						});
+					});
+				</script>
+				<div class="register_login_content">
+					<form action="">
+						<div class="input">
+							<input type="text" placeholder="用户名"/>
+							<input type="text" placeholder="手机号"/>
+							<input type="password" placeholder="密码"/>
+							<div class="input-group">
+								<input type="text" placeholder="验证码"/>
+								<a href="javasript:;" class="verification">发生验证码</a>
+							</div>
+						</div>
+						<div class="protocols_box">
+							<label class="protocols">
+								<input type="radio" id="protocol"/><i class="radioborder"></i>SIGHT用户协议
+							</label>
+						</div>
+						<input type="submit" value="注册" class="submit_register"/>
+						<div class="three_register">
+							<span class="lineae"></span><span class="font_three_register">第三方注册</span><span class="lineae"></span>
+						</div>
+						<div>
+							<a href="#"  class="weibo_big"></a>
+							<a href="#" class="weixin_big"></a>
+						</div>
+					</form>
+						
+				</div>
+			</div>
+		</section>
+		<footer>
+			<div class="wrap clearfix">
+				<div class="logo_big fl"></div>
+				<div class="aboutUs fl">
+					<h3>关于我们</h3>
+					<p>sight是一个面向摄影师、船拍工作者等拍摄类作品人群的互联网产品，提供产品在线服务，供网友在线查看优质照片作品的交流网站，致力于打造高品质的高清图片社区。</p>
+				</div>
+				<div class="SIGHT fl">
+					<h3>SIGHT</h3>
+					<ul>
+						<li><a href="#">联系我们</a></li>
+						<li><a href="#">加入我们</a></li>
+						<li><a href="#">商务合作</a></li>
+					</ul>
+				</div>
+				<div class="callUs fl">
+					<h3>联系我们</h3>
+					<a href="#" class="weibo"></a>
+					<a href="#" class="weibo"></a>
+				</div>
+			</div>	
+		</footer>
+	</body>
+</html>

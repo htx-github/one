@@ -1,0 +1,34 @@
+header{border: none;min-width: 1030px;}
+.phonelabel{display:inline-block;padding: 12px 38px 12px;background: rgb(53,139,236);color: white;margin-top: 10px;}
+section{width: 100%;min-width: 1030px;}
+section>.container-fluid{padding-bottom: 45px;}
+/*section*/
+.nav > li{border: none;}
+.col-sm-12{padding: 0;}
+.tab-content{border: 1px solid rgb(221,221,221);border-top: none;}
+.table th, .table td {
+    text-align: center;
+    vertical-align: middle;
+}
+.imgbox{padding: 15px 45px;}
+.table-btn{background: rgb(53,139,216);color: white;border-radius: 28px;padding: 0 6px;}
+.circle{border: 2px solid rgb(53,139,216);border-radius: 50%;width: 50px;height: 50px;margin: 0 auto;}
+.btn-newconnectionplate{padding: 8px 12px;}
+
+.select1{background: url(../img/selectslide3.png) no-repeat right -1px;-webkit-appearance: none;appearance: none;padding: 9px 64px 9px 9px;border: 1px solid rgb(174,208,240);margin-right: 12px;}
+.input-group .form-control{width: 295px;}
+.search-group{display: inline-table;vertical-align: middle;margin-right: 40px;}
+.search,.search-btn{height: 40px;}
+.search{border: 1px solid rgb(174,208,240);border-radius: 0;}
+.search-btn{color: white;background: rgb(53,139,216);border-radius: 0;}
+
+.flex{
+	display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    margin-bottom: 35px;
+}
+.flexbox{width: 24%;height: 231px;border: 1px solid #ccc;padding: 10px;}
+.photobox{border: 1px solid #ccc;height: 165px;width: 100%;margin-bottom: 7px;}
+.photobox .img-responsive{height: 100%;}
+.flexbox-btn{padding: 6px 11px;}

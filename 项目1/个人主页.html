@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title></title>
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/main.css" />
+	</head>
+	<body>
+		<header>
+			<div class="wrap clearfix">
+					<span class="logo_sm fl"></span>
+					<a href="#" class="index fl">首页</a>
+					<a href="#" class="find fl">发现</a>
+					<div class="header-box fr">
+						<a href="#" class="yun"></a>
+						<a href="#" class="ling"></a>
+						<a href="#" class="touxiang"></a>
+					</div>
+			</div>
+		</header>
+		<section class="local_index">
+			<div class="wrap">
+				<div class="local_index_inro">
+					<img src="img/touxiang_big.png" alt="个人头像" class="touxiang_big"/>
+					<h3 class="inro_name">影界、大表哥<span class="huo"></span>763872</h3>
+					<p class="tag">不想当将军的裁缝不是个好厨师，我讲的对不对，微信13122634525</p>
+					<input type="button" value="关注" class="focus"/>
+					<div class="fansBoxes clearfix">
+						<div class="fansBox1 fl">
+						<h2>816</h2>
+						<p>关注</p>
+						</div>
+						<div class="fansBox2 fl">
+							<h2>816</h2>
+							<p>粉丝</p>
+						</div>
+						<div class="fansBox3 fl">
+							<h2>816</h2>
+							<p>点赞</p>
+						</div>
+					</div>
+				</div>
+				<div class="local_index_bar clearfix">
+					<a href="#" class="myphoto active fl">我的照片</a>
+					<a href="#" class="mylike fl">我喜欢的</a>
+					<a href="#" class="me fr">关于我</a>
+				</div>
+				<script src="js/jquery-3.1.1.min.js" type="text/javascript" charset="utf-8"></script>
+				<script type="text/javascript">
+					$(function(){
+						$(".local_index_bar a").hover(function(){
+							if($(this).is(".active")){
+								return 0;
+							}
+							else{
+								$(this).addClass("active")
+									.siblings().removeClass("active");
+							}
+						});
+					});
+				</script>
+				<div class="PhotoWall">
+					<div class="flex">
+						<div class="photobox">
+							<img src="img/photo1.png" alt="" />
+						</div>
+						<div class="photobox">
+							<img src="img/photo1.png" alt="" />
+						</div>			
+						<div class="photobox">
+							<img src="img/photo1.png" alt="" />
+						</div>	
+					</div>
+					<div class="flex">
+						<div class="photobox">
+							<img src="img/2.png" alt="" />
+						</div>
+						<div class="photobox">
+							<img src="img/2.png" alt="" />
+						</div>			
+					</div>
+					<div class="flex">
+						<div class="photobox">
+							<img src="img/photo1.png" alt="" />
+						</div>
+						<div class="photobox">
+							<img src="img/photo1.png" alt="" />
+						</div>			
+						<div class="photobox">
+							<img src="img/photo1.png" alt="" />
+						</div>	
+					</div>
+				</div>
+			</div>
+		</section>
+		<footer>
+			<div class="wrap clearfix">
+				<div class="logo_big fl"></div>
+				<div class="aboutUs fl">
+					<h3>关于我们</h3>
+					<p>sight是一个面向摄影师、船拍工作者等拍摄类作品人群的互联网产品，提供产品在线服务，供网友在线查看优质照片作品的交流网站，致力于打造高品质的高清图片社区。</p>
+				</div>
+				<div class="SIGHT fl">
+					<h3>SIGHT</h3>
+					<ul>
+						<li><a href="#">联系我们</a></li>
+						<li><a href="#">加入我们</a></li>
+						<li><a href="#">商务合作</a></li>
+					</ul>
+				</div>
+				<div class="callUs fl">
+					<h3>联系我们</h3>
+					<a href="#" class="weibo"></a>
+					<a href="#" class="weibo"></a>
+				</div>
+			</div>	
+		</footer>
+	</body>
+</html>

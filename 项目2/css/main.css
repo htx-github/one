@@ -1,0 +1,60 @@
+/*模态框*/
+.modal-body h5{color: red;margin-bottom: 8px;}
+.modal-body .form-control{border:1px solid rgb(140,189,233) ;position: relative;}
+.verification{display: inline-block;border-radius: 4px;height: 26px;line-height: 26px;font-weight: bold;width: 100px;text-align: center;;background: rgb(204,204,204);color: rgb(165,165,165);position: absolute;top: 4px;right: 8px;}
+.tel{padding-right: 122px;}
+.modal-content{width: 551px;}
+.authority{background: rgb(53,139,216);color: white;border-radius: 28px;}
+.close1{background:white ;color:rgb(53,139,236) ;border: none;}
+
+/*banner*/
+.banner{height: auto;width:100%;min-width:1000px;margin: 6px 0 8px;}
+/*section*/
+section{width: 100%;min-width: 1000px;}
+section row .col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12
+{    
+	padding-right: 3px;
+    padding-left: 3px;
+    }
+.col2,.col3,.col9,.col12{ border: 1px solid rgb(204,204,204);}
+.col3,.col9{height: 304px;}
+.col2{height: 750px;}
+.col12{height: 440px;margin-top: 6px;}
+.col3_content{width: 94%;margin: 23px auto;}
+/*.col3_content*/
+.title_name{font-weight: bold;color: rgb(76,81,87);margin-bottom: 33px;display: block;}
+.upgrade1{background: rgb(53,139,236);color: white;height: 22px;line-height: 22px;}
+.col3_content i{color: red;font-style: normal;margin-left: 3px;}
+.recharge{margin: 8px 0 14px;}
+.servicer{background: rgb(53,139,236);color: white;width: 100%;border-radius: 4px;height: 23px;line-height: 23px;margin-bottom: 8px;}
+.AddQQ{background: rgb(53,139,236);color: white;width: 100%;border-radius: 4px;height: 50px;line-height: 50px;margin-top: 20px;}
+.col9_content{position: relative;}
+.yuan{background: red ;width: 170px;height: 170px;border-radius: 85px;margin-top: 46px;position: absolute;left: 5%;}
+.examination{margin-top: 46px;padding-top: 45px;text-align: center;left: 35%;position: absolute;}
+.examination h1{font-size: 24px;color: rgb(76,81,87);}
+.examination p{line-height: 30px;}
+.check{display:block;background: #6c6;height: 50px;width:180px;border-radius: 23px;color: white;font-size: 24px;margin: 40px auto;}
+.check:hover{opacity: 0.7;}
+/*col12_content*/
+.col12_content{padding: 31px 25px 0;}
+.tool1,.tool2{line-height: 25px;color: rgb(76,81,87);}
+.tool1{text-indent: 12px;}
+.tool2{margin-right: 215px;}
+.tool_boxes{float:left;text-align:center;padding: 17px 13px 9px;}
+.tool_img{width: 85px;height: 85px;border-radius: 50%;border: 1px solid #ccc;background: rgb(249,249,249);position: relative;}
+.tool_img img{display: block;width: 51px;height: 48px;position: absolute;top: 18px;left: 17px;}
+.tool_font{line-height: 24px;color: #358bd8;}
+.tool_boxes2{float: left;text-align: center;margin-left: 25px;}
+.tool_img2{margin:0 auto;width: 45px;height: 45px;border-radius: 4px;background: rgb(83,147,255);padding: 7.5px;}
+.tool_img2 img{display: block;width: 30px;height: 30px;}
+.tool_font2{line-height: 33px;color: #8a8a8a;}
+.tool_box2{padding-top: 14px;background: rgb(246,246,246);margin-bottom: 5px;}
+/*col2_content*/
+.col2_content{padding: 46px 11px 0;}
+.situation{color: rgb(76,81,87);line-height: 25px;}
+.boxes{width:100%;height: 100%;background: rgb(246,246,246);padding: 16px 0 16px 20px;margin-bottom: 2px;}
+.box_img img{display: block;width: 46px;height: 47px;} 
+.box_content p{color: rgb(53,139,236);}
+.box_content h1{font-size: 24px}
+.boxes_content{line-height: 25px;font-size: 12px;}
+.view_data{color: rgb(76,81,87);line-height: 25px;}

@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<html style="height: 100%;">
+	<head >
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="css/bootstrap.css" />
+		<link rel="stylesheet" href="css/all.css"/>
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/phone.css" />
+		<link rel="stylesheet" href="css/connectionplateloading.css" />
+		<script src="js/jquery-3.1.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript" src="js/bootstrap.js" ></script>
+		<script src="js/icheck.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body style="height: 100%;">
+		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+					<div class="iphone">
+						<div class="iphonebox" >
+							<div class="iphoneimg">
+								<img src="img/slider-1.jpg" class="img-responsive" />
+							</div>
+							<div class="iphoneimg">
+								<img src="img/slider-2.jpg" class="img-responsive" />
+							</div>
+							<div class="iphoneimg">
+								<img src="img/slider-3.jpg" class="img-responsive" />
+							</div>
+							<div class="iphoneimg">
+								<img src="img/slider-4.jpg" class="img-responsive" />
+							</div>
+							<div class="iphoneimg">
+								<img src="img/slider-1.jpg" class="img-responsive" />
+							</div>
+						</div>
+					</div>
+					<button class="btn authority pull-right" data-dismiss="modal" aria-hidden="true">关闭</button>
+					<button class="btn authority pull-right" style="width: 145px;">&larr;去京东后天编辑</button>
+			</div><!-- /.modal -->
+		</div>
+		<header>
+			<div class="headerbar clearfix">
+				<div class="logobar pull-left">
+				<span class="logo pull-left"></span>
+				网店卫视
+				</div>
+				<div class="nav-container pull-left">
+						<nav class="navbar navbar-default" role="navigation">
+							<ul class="nav navbar-nav">
+								<li class="dropdown">
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+										商品管理
+									</a>
+									<ul class="dropdown-menu">
+										<li><a href="#">商品检测</a></li>
+										<li><a href="#">商品标语</a></li>
+										<li><a href="#">商品排名</a></li>
+										<li><a href="#">商品分析</a></li>
+									</ul>
+								</li>
+								<li class="dropdown">
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+										手机详情
+									</a>
+									<ul class="dropdown-menu padding">
+										<li><a href="#">在售商品</a></li>
+										<li><a href="#">一键全店生成</a></li>
+										<li><a href="#">需要更新项</a></li>
+									</ul>
+								</li>
+								<li class="dropdown ">
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+										手机关联版式
+									</a>
+									<ul class="dropdown-menu padding1">
+										<li><a href="#">我的关联版式</a></li>
+										<li><a href="#">关联版式模板库</a></li>
+										<li><a href="#">创建新的版式</a></li>
+									</ul>
+								</li>
+								<li class="dropdown">
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+										订单管理
+									</a>
+									<ul class="dropdown-menu">
+										<li><a href="#">订单检测</a></li>
+										<li><a href="#">订单发货</a></li>
+									</ul>
+								</li>
+								<li class="dropdown">
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+										客户管理
+									</a>
+									<ul class="dropdown-menu">
+										<li><a href="#">客户关怀</a></li>
+										<li><a href="#">评价管理</a></li>
+									</ul>
+								</li>
+								<li class="dropdown">
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+										更多功能
+									</a>
+									<ul class="dropdown-menu">
+										<li><a href="#">充值中心</a></li>
+										<li><a href="#">系统设置</a></li>
+									</ul>
+								</li>
+							</ul>
+						</nav>
+				</div>	
+				<div class="hd_right pull-right">
+					<div class="hd_right_top ">
+						<div>免费版&nbsp;&nbsp;剩余7天</div> 
+						<a href="#" class="upgrade">续费升级</a>
+					</div>
+					<div class="hd_right_bottom clearfix">
+						<a href="#" class="refresh">同步刷新</a>
+						<a href="#" class="service">专属客服</a>
+					</div>
+				</div>
+			</div>
+		</header>
+		<div class="hr_100">
+			<span class="phonelabel ">关联版式加载</span>
+		</div>
+		<section style="background: rgb(236,236,236)">
+			<div class="container-fluid" >
+				<div class="row clearfix" style="background: white;">
+					<div class="col-sm-12 column">
+						<ul id="myTab" class="nav nav-tabs">
+							<li class="active"><a href="#home" data-toggle="tab">按商品选择</a></li>
+							<li><a href="#ios" data-toggle="tab">已选&nbsp;<i class="redfont">( 20 )</i></a></li>
+							<li><a href="#ejb" data-toggle="tab">按类目选择</a></li>
+							<p class="pull-right" style="line-height: 40px;color: rgb(143,216,144);margin-right: 17px;">加载说明:目前京东手机端前台暂时无法展示手机端关联版式,因此网店卫士提供将关联版式插入手机端商品描述</p>
+						</ul>
+						<div id="myTabContent" class="tab-content">
+							<div class="tab-pane fade in active" id="home">
+								<div class="container-fluid" style="position: relative;">
+									<div class="connectbox"><img src="img/slider-1.jpg" class="img-responsive"/></div>
+									<div class="connectfont">关联版式00125</div>
+									<div class="row">
+											<button class="btn authority">批量卸载</button>
+											<div class="input-group search-group pull-right">
+												<input type="text" class="form-control search" placeholder="标题/货号/编号"/>
+												<div class="input-group-btn">
+													<button class="btn search-btn"><span class="glyphicon glyphicon-search"></span></button>
+												</div>
+											</div>
+											<select  class="select1 pull-right">
+											  <option>有手机详情</option>
+											  <option>无手机详情</option>
+											  <option>全部状态</option>
+											</select>
+											<select  class="select1 pull-right">
+											  <option>不限店铺分类</option>
+											  <option>list item1</option>
+											  <option>list item1</option>
+											  <option>list item1</option>
+											  <option>list item1</option>
+											</select>
+									</div>
+									<div class="hr_35"></div>
+									<div class="row" id="squareinput">
+										每页显示
+										<select  class="select1 select2 ">
+											  <option>5</option>
+											  <option selected>10</option>
+											  <option>50</option>
+											  <option>100</option>
+										</select>
+										<div class="pull-right" style="margin-right: 57px;">
+											<input type="checkbox" id="hide1" checked><label for="hide1">隐藏无手机详情商品</label>
+										</div>
+										<div class="pull-right" style="margin-right: 10px;">
+											<input type="checkbox" id="hide2" checked><label for="hide2">隐藏其他关联商品</label>
+										</div>
+										<div class="pull-right" style="margin-right: 24px;">
+											<input type="checkbox" id="hide3" checked><label for="hide3">隐藏本关联商品</label>
+										</div>
+									</div>
+									<div class="hr_20"></div>
+									<table class="table table-bordered" style="width: auto;height: auto;">
+										<thead>
+										    <tr>
+											    <th style="width: 3%;">
+								                    <input type="checkbox" id="input-1" class="js-checkbox-all">
+											    </th>	
+											    <th style="width: 10%;">图片</th>
+											    <th style="width: 39%;">商品投放</th>
+											    <th style="width: 12%;">关联版效果</th>
+											    <th style="width: 12%;">价格</th>
+											    <th style="width: 12%;">手机详情</th>
+											    <th style="width: 12%;">操作</th>
+										    </tr>
+										</thead>
+										<tbody>
+										    <tr>
+									      		<td style="width: 3%;">
+									      			<input type="checkbox" id="input-2">
+									      		</td>
+										      	<td style="width: 10%;">
+										      		<img src="img/slider-1.jpg" class="img-responsive" alt="Cinque Terre">
+										      	</td>
+										     	<td style="width: 39%;">
+										     		<p style="height:20px;overflow:hidden;text-overflow:ellipsis;">标题：我题我是标题我是标题我是标题我是标题我是标题我是标题我是标题我是标题我是标题我是标题我是标题我是标题我是
+										     		</p>
+											      	<p>编号：<i class="redfont">4858745486</i>&nbsp;货号：<i class="redfont">164566546</i></p>
+											      	<div class="QR-Code" onmouseover="this.className = 'QR-Code on';" onmouseout="this.className = 'QR-Code';">
+											      		码
+											      		<div class="weixin_nr">
+													    	<div class="arrow"></div>
+													        <img src="img/weixin.jpg" width="100" height="100" />
+													    </div>
+											      	</div>状态：在售
+										      	</td>
+										      	<td style="width: 12%;">
+													已加载其他关联
+										      	</td>
+										      	<td style="width: 12%;">
+										      		<i class="redfont">88.0</i>
+										      	</td>
+										      	<td style="width: 12%;">
+										      		<p>有详情</p>
+										      	</td>
+										      	<td style="width: 12%;">
+										      		<button class="btn table-btn disabled ">○选择</button>
+										      	</td>
+										    </tr>
+										    <tr>
+									      		<td style="width: 3%;">
+									      			<input type="checkbox" id="input-2">
+									      		</td>
+										      	<td style="width: 10%;">
+										      		<img src="img/slider-1.jpg" class="img-responsive" alt="Cinque Terre">
+										      	</td>
+										     	<td style="width: 39%;">
+										     		<p style="height:20px;overflow:hidden;text-overflow:ellipsis;">标题：我题我是标题我是标题我是标题我是标题我是标题我是标题我是标题我是标题我是标题我是标题我是标题我是标题我是
+										     		</p>
+											      	<p>编号：<i class="redfont">4858745486</i>&nbsp;货号：<i class="redfont">164566546</i></p>
+											      	<div class="QR-Code" onmouseover="this.className = 'QR-Code on';" onmouseout="this.className = 'QR-Code';">
+											      		码
+											      		<div class="weixin_nr">
+													    	<div class="arrow"></div>
+													        <img src="img/weixin.jpg" width="100" height="100" />
+													    </div>
+											      	</div>状态：在售
+										      	</td>
+										      	<td style="width: 12%;">
+													已加载本关联
+										      	</td>
+										      	<td style="width: 12%;">
+										      		<i class="redfont">88.0</i>
+										      	</td>
+										      	<td style="width: 12%;">
+										      		<p>有详情</p>
+										      	</td>
+										      	<td style="width: 12%;">
+										      		<button class="btn table-btn disabled ">○选择</button>
+										      	</td>
+										    </tr>
+										    <tr>
+									      		<td style="width: 3%;">
+									      			<input type="checkbox" id="input-2">
+									      		</td>
+										      	<td style="width: 10%;">
+										      		<img src="img/slider-1.jpg" class="img-responsive" alt="Cinque Terre">
+										      	</td>
+										     	<td style="width: 39%;">
+										     		<p style="height:20px;overflow:hidden;text-overflow:ellipsis;">标题：我题我是标题我是标题我是标题我是标题我是标题我是标题我是标题我是标题我是标题我是标题我是标题我是标题我是
+										     		</p>
+											      	<p>编号：<i class="redfont">4858745486</i>&nbsp;货号：<i class="redfont">164566546</i></p>
+											      	<div class="QR-Code" onmouseover="this.className = 'QR-Code on';" onmouseout="this.className = 'QR-Code';">
+											      		码
+											      		<div class="weixin_nr">
+													    	<div class="arrow"></div>
+													        <img src="img/weixin.jpg" width="100" height="100" />
+													    </div>
+											      	</div>状态：在售
+										      	</td>
+										      	<td style="width: 12%;">
+													已加载本关联
+										      	</td>
+										      	<td style="width: 12%;">
+										      		<i class="redfont">88.0</i>
+										      	</td>
+										      	<td style="width: 12%;">
+										      		<p>有详情</p>
+										      	</td>
+										      	<td style="width: 12%;">
+										      		<button class="btn table-btn disabled ">○选择</button>
+										      	</td>
+										    </tr>
+										    <tr>
+									      		<td style="width: 3%;">
+									      			<input type="checkbox" id="input-2">
+									      		</td>
+										      	<td style="width: 10%;">
+										      		<img src="img/slider-1.jpg" class="img-responsive" alt="Cinque Terre">
+										      	</td>
+										     	<td style="width: 39%;">
+										     		<p style="height:20px;overflow:hidden;text-overflow:ellipsis;">标题：我题我是标题我是标题我是标题我是标题我是标题我是标题我是标题我是标题我是标题我是标题我是标题我是标题我是
+										     		</p>
+											      	<p>编号：<i class="redfont">4858745486</i>&nbsp;货号：<i class="redfont">164566546</i></p>
+											      	<div class="QR-Code" onmouseover="this.className = 'QR-Code on';" onmouseout="this.className = 'QR-Code';">
+											      		码
+											      		<div class="weixin_nr">
+													    	<div class="arrow"></div>
+													        <img src="img/weixin.jpg" width="100" height="100" />
+													    </div>
+											      	</div>状态：在售
+										      	</td>
+										      	<td style="width: 12%;">
+													已加载本关联
+										      	</td>
+										      	<td style="width: 12%;">
+										      		<i class="redfont">88.0</i>
+										      	</td>
+										      	<td style="width: 12%;">
+										      		<p>无详情</p>
+										      	</td>
+										      	<td style="width: 12%;">
+										      		<button class="btn table-btn">○取消选择</button>
+										      	</td>
+										    </tr>
+										    <tr>
+									      		<td style="width: 3%;">
+									      			<input type="checkbox" id="input-2">
+									      		</td>
+										      	<td style="width: 10%;">
+										      		<img src="img/slider-1.jpg" class="img-responsive" alt="Cinque Terre">
+										      	</td>
+										     	<td style="width: 39%;">
+										     		<p style="height:20px;overflow:hidden;text-overflow:ellipsis;">标题：我题我是标题我是标题我是标题我是标题我是标题我是标题我是标题我是标题我是标题我是标题我是标题我是标题我是
+										     		</p>
+											      	<p>编号：<i class="redfont">4858745486</i>&nbsp;货号：<i class="redfont">164566546</i></p>
+											      	<div class="QR-Code" onmouseover="this.className = 'QR-Code on';" onmouseout="this.className = 'QR-Code';">
+											      		码
+											      		<div class="weixin_nr">
+													    	<div class="arrow"></div>
+													        <img src="img/weixin.jpg" width="100" height="100" />
+													    </div>
+											      	</div>状态：在售
+										      	</td>
+										      	<td style="width: 12%;">
+													已加载本关联
+										      	</td>
+										      	<td style="width: 12%;">
+										      		<i class="redfont">88.0</i>
+										      	</td>
+										      	<td style="width: 12%;">
+										      		<p>无详情</p>
+										      	</td>
+										      	<td style="width: 12%;">
+										      		<button class="btn table-btn disabled ">○选择</button>
+										      	</td>
+										    </tr>
+										 </tbody>
+									</table>
+									<div class="row" style="line-height: 34px;">
+										<span>显示5个商品 , 共有800个商品</span>
+										<ul class="pagination pull-right">
+										    <li ><a href="#" >&larr;上页</a></li>
+										    <li class="active"><a href="#">1</a></li>
+										    <li><a href="#">2</a></li>
+										    <li><a href="#">3</a></li>
+										    <li><a href="#">4</a></li>
+										    <li><a href="#">5</a></li>
+										    <li><a href="#">下页&rarr;</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="tab-pane fade" id="ios">
+								<div class="container-fluid" style="position: relative;">
+									<div class="connectbox"><img src="img/slider-1.jpg" class="img-responsive"/></div>
+									<div class="connectfont">关联版式00125</div>
+									<div class="row">
+											<button class="btn authority">批量卸载</button>
+											<div class="input-group search-group pull-right">
+												<input type="text" class="form-control search" placeholder="标题/货号/编号"/>
+												<div class="input-group-btn">
+													<button class="btn search-btn"><span class="glyphicon glyphicon-search"></span></button>
+												</div>
+											</div>
+											<select  class="select1 pull-right">
+											  <option>有手机详情</option>
+											  <option>无手机详情</option>
+											  <option>全部状态</option>
+											</select>
+											<select  class="select1 pull-right">
+											  <option>不限店铺分类</option>
+											  <option>list item1</option>
+											  <option>list item1</option>
+											  <option>list item1</option>
+											  <option>list item1</option>
+											</select>
+									</div>
+									<div class="hr_35"></div>
+									<div class="row" id="squareinput">
+										每页显示
+										<select  class="select1 select2 ">
+											  <option>5</option>
+											  <option selected>10</option>
+											  <option>50</option>
+											  <option>100</option>
+										</select>
+										<div class="pull-right" style="margin-right: 57px;">
+											<input type="checkbox" id="hide1" checked><label for="hide1">隐藏无手机详情商品</label>
+										</div>
+										<div class="pull-right" style="margin-right: 10px;">
+											<input type="checkbox" id="hide2" checked><label for="hide2">隐藏其他关联商品</label>
+										</div>
+										<div class="pull-right" style="margin-right: 24px;">
+											<input type="checkbox" id="hide3" checked><label for="hide3">隐藏本关联商品</label>
+										</div>
+									</div>
+									<div class="hr_20"></div>
+									<table class="table table-bordered" style="width: auto;height: auto;">
+										<thead>
+										    <tr>
+											    <th style="width: 3%;">
+								                    <input type="checkbox" id="input-1" class="js-checkbox-all">
+											    </th>	
+											    <th style="width: 10%;">图片</th>
+											    <th style="width: 39%;">商品投放</th>
+											    <th style="width: 12%;"></th>
+											    <th style="width: 12%;">价格</th>
+											    <th style="width: 12%;">手机详情</th>
+											    <th style="width: 12%;">操作</th>
+										    </tr>
+										</thead>
+										<tbody>
+										    <tr>
+									      		<td style="width: 3%;">
+									      			<input type="checkbox" id="input-2">
+									      		</td>
+										      	<td style="width: 10%;">
+										      		<img src="img/slider-1.jpg" class="img-responsive" alt="Cinque Terre">
+										      	</td>
+										     	<td style="width: 39%;">
+										     		<p style="height:20px;overflow:hidden;text-overflow:ellipsis;">标题：我题我是标题我是标题我是标题我是标题我是标题我是标题我是标题我是标题我是标题我是标题我是标题我是标题我是
+										     		</p>
+											      	<p>编号：<i class="redfont">4858745486</i>&nbsp;货号：<i class="redfont">164566546</i></p>
+											      	<div class="QR-Code" onmouseover="this.className = 'QR-Code on';" onmouseout="this.className = 'QR-Code';">
+											      		码
+											      		<div class="weixin_nr">
+													    	<div class="arrow"></div>
+													        <img src="img/weixin.jpg" width="100" height="100" />
+													    </div>
+											      	</div>状态：在售
+										      	</td>
+										      	<td style="width: 12%;">
+													
+										      	</td>
+										      	<td style="width: 12%;">
+										      		<i class="redfont">88.0</i>
+										      	</td>
+										      	<td style="width: 12%;">
+										      		<p>有详情</p>
+										      	</td>
+										      	<td style="width: 12%;">
+										      		<button class="btn table-btn">○取消选择</button>
+										      	</td>
+										    </tr>
+										    <tr>
+									      		<td style="width: 3%;">
+									      			<input type="checkbox" id="input-2">
+									      		</td>
+										      	<td style="width: 10%;">
+										      		<img src="img/slider-1.jpg" class="img-responsive" alt="Cinque Terre">
+										      	</td>
+										     	<td style="width: 39%;">
+										     		<p style="height:20px;overflow:hidden;text-overflow:ellipsis;">标题：我题我是标题我是标题我是标题我是标题我是标题我是标题我是标题我是标题我是标题我是标题我是标题我是标题我是
+										     		</p>
+											      	<p>编号：<i class="redfont">4858745486</i>&nbsp;货号：<i class="redfont">164566546</i></p>
+											      	<div class="QR-Code" onmouseover="this.className = 'QR-Code on';" onmouseout="this.className = 'QR-Code';">
+											      		码
+											      		<div class="weixin_nr">
+													    	<div class="arrow"></div>
+													        <img src="img/weixin.jpg" width="100" height="100" />
+													    </div>
+											      	</div>状态：在售
+										      	</td>
+										      	<td style="width: 12%;">
+													
+										      	</td>
+										      	<td style="width: 12%;">
+										      		<i class="redfont">88.0</i>
+										      	</td>
+										      	<td style="width: 12%;">
+										      		<p>有详情</p>
+										      	</td>
+										      	<td style="width: 12%;">
+										      		<button class="btn table-btn">○取消选择</button>
+										      	</td>
+										    </tr>
+										    <tr>
+									      		<td style="width: 3%;">
+									      			<input type="checkbox" id="input-2">
+									      		</td>
+										      	<td style="width: 10%;">
+										      		<img src="img/slider-1.jpg" class="img-responsive" alt="Cinque Terre">
+										      	</td>
+										     	<td style="width: 39%;">
+										     		<p style="height:20px;overflow:hidden;text-overflow:ellipsis;">标题：我题我是标题我是标题我是标题我是标题我是标题我是标题我是标题我是标题我是标题我是标题我是标题我是标题我是
+										     		</p>
+											      	<p>编号：<i class="redfont">4858745486</i>&nbsp;货号：<i class="redfont">164566546</i></p>
+											      	<div class="QR-Code" onmouseover="this.className = 'QR-Code on';" onmouseout="this.className = 'QR-Code';">
+											      		码
+											      		<div class="weixin_nr">
+													    	<div class="arrow"></div>
+													        <img src="img/weixin.jpg" width="100" height="100" />
+													    </div>
+											      	</div>状态：在售
+										      	</td>
+										      	<td style="width: 12%;">
+													
+										      	</td>
+										      	<td style="width: 12%;">
+										      		<i class="redfont">88.0</i>
+										      	</td>
+										      	<td style="width: 12%;">
+										      		<p>有详情</p>
+										      	</td>
+										      	<td style="width: 12%;">
+										      		<button class="btn table-btn">○取消选择</button>
+										      	</td>
+										    </tr>
+										    <tr>
+									      		<td style="width: 3%;">
+									      			<input type="checkbox" id="input-2">
+									      		</td>
+										      	<td style="width: 10%;">
+										      		<img src="img/slider-1.jpg" class="img-responsive" alt="Cinque Terre">
+										      	</td>
+										     	<td style="width: 39%;">
+										     		<p style="height:20px;overflow:hidden;text-overflow:ellipsis;">标题：我题我是标题我是标题我是标题我是标题我是标题我是标题我是标题我是标题我是标题我是标题我是标题我是标题我是
+										     		</p>
+											      	<p>编号：<i class="redfont">4858745486</i>&nbsp;货号：<i class="redfont">164566546</i></p>
+											      	<div class="QR-Code" onmouseover="this.className = 'QR-Code on';" onmouseout="this.className = 'QR-Code';">
+											      		码
+											      		<div class="weixin_nr">
+													    	<div class="arrow"></div>
+													        <img src="img/weixin.jpg" width="100" height="100" />
+													    </div>
+											      	</div>状态：在售
+										      	</td>
+										      	<td style="width: 12%;">
+													
+										      	</td>
+										      	<td style="width: 12%;">
+										      		<i class="redfont">88.0</i>
+										      	</td>
+										      	<td style="width: 12%;">
+										      		<p>无详情</p>
+										      	</td>
+										      	<td style="width: 12%;">
+										      		<button class="btn table-btn">○取消选择</button>
+										      	</td>
+										    </tr>
+										    <tr>
+									      		<td style="width: 3%;">
+									      			<input type="checkbox" id="input-2">
+									      		</td>
+										      	<td style="width: 10%;">
+										      		<img src="img/slider-1.jpg" class="img-responsive" alt="Cinque Terre">
+										      	</td>
+										     	<td style="width: 39%;">
+										     		<p style="height:20px;overflow:hidden;text-overflow:ellipsis;">标题：我题我是标题我是标题我是标题我是标题我是标题我是标题我是标题我是标题我是标题我是标题我是标题我是标题我是
+										     		</p>
+											      	<p>编号：<i class="redfont">4858745486</i>&nbsp;货号：<i class="redfont">164566546</i></p>
+											      	<div class="QR-Code" onmouseover="this.className = 'QR-Code on';" onmouseout="this.className = 'QR-Code';">
+											      		码
+											      		<div class="weixin_nr">
+													    	<div class="arrow"></div>
+													        <img src="img/weixin.jpg" width="100" height="100" />
+													    </div>
+											      	</div>状态：在售
+										      	</td>
+										      	<td style="width: 12%;">
+													
+										      	</td>
+										      	<td style="width: 12%;">
+										      		<i class="redfont">88.0</i>
+										      	</td>
+										      	<td style="width: 12%;">
+										      		<p>无详情</p>
+										      	</td>
+										      	<td style="width: 12%;">
+										      		<button class="btn table-btn disabled ">○选择</button>
+										      	</td>
+										    </tr>
+										 </tbody>
+									</table>
+									<div class="row" style="line-height: 34px;">
+										<span>显示5个商品 , 共有800个商品</span>
+										<ul class="pagination pull-right">
+										    <li ><a href="#" >&larr;上页</a></li>
+										    <li class="active"><a href="#">1</a></li>
+										    <li><a href="#">2</a></li>
+										    <li><a href="#">3</a></li>
+										    <li><a href="#">4</a></li>
+										    <li><a href="#">5</a></li>
+										    <li><a href="#">下页&rarr;</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="tab-pane fade" id="ejb">
+								<div class="container-fluid" >
+									<div class="hr_20"></div>
+									<div class="hr_50"></div>
+									<div class="container-fluid" style="border: 1px solid #ccc;position: relative;">
+										<form action="#" role="form" class="form-inline form1" >
+												<div class="connectbox"><img src="img/slider-1.jpg" class="img-responsive"/></div>
+												<div class="connectfont">关联版式00125</div>
+												<div class="row">
+													<span class="label-title">店铺分类</span>
+									                    <input type="checkbox" id="checkbox1" class="js-checkbox-all">
+									                    <label for="checkbox1">
+									                        	全选
+									                    </label>
+												</div>
+												<div class="row">
+														<div class="checkbox3 checkboxindex">
+															<input id="checkbox2" type="checkbox">
+										                    <label for="checkbox2">
+										                        	店内分类
+										                    </label>
+														</div>
+									                   	<div class="checkbox3">
+															<input id="checkbox3" type="checkbox">
+										                    <label for="checkbox3">
+										                        	店内分类
+										                    </label>
+														</div>
+														<div class="checkbox3">
+															<input id="checkbox4" type="checkbox">
+										                    <label for="checkbox4">
+										                        	店内分类
+										                    </label>
+														</div>
+														<div class="checkbox3">
+															<input id="checkbox5" type="checkbox">
+										                    <label for="checkbox5">
+										                        	店内分类
+										                    </label>
+														</div>
+														<div class="checkbox3">
+															<input id="checkbox6" type="checkbox">
+										                    <label for="checkbox6">
+										                        	店内分类
+										                    </label>
+														</div>
+														<div class="checkbox3">
+															<input id="checkbox7" type="checkbox">
+										                    <label for="checkbox7">
+										                        	未分类
+										                    </label>
+														</div>
+												</div>
+												<div class="hr_50"></div>
+												<div class="row">
+													<span class="label-title" style="float: left;margin-top: 0px;">商品类型</span>
+														<div class="checkbox3">
+													        <input id="checkbox8" type="checkbox">
+										                    <label for="checkbox8">
+										                        	在售商品
+										                    </label>
+									                   </div>
+									                    <div class="checkbox3">
+										                    <input id="checkbox9" type="checkbox">
+										                    <label for="checkbox9">
+										                        	代售商品
+										                    </label>
+									                    </div>
+												</div>
+												<div class="hr_35"></div>
+												<div class="row">
+													<span class="label-title" style="float: left;margin-top: 0px;">加载范围</span>
+													<div class="checkbox3">
+												       <input id="checkbox10" type="checkbox">
+									                    <label for="checkbox10">
+									                        	跳过本关联商品
+									                    </label>
+									               </div>
+									               <div class="checkbox3">
+									                    <input id="checkbox11" type="checkbox">
+									                    <label for="checkbox11">
+									                        	跳过其他关联商品
+									                    </label>
+								                    </div>
+								                    <div class="checkbox3">
+									                    <input id="checkbox12" type="checkbox">
+									                    <label for="checkbox12">
+									                        	跳过无手机详情商品
+									                    </label>
+									                </div>
+												</div>
+										</form>
+									</div>
+									<div class="hr_20"></div>
+									<button class="btn authority">开始加载</button>已选：<i class="redfont">50个</i>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+<script>
+
+	var $checkboxAll = $("#home .js-checkbox-all"),
+	    $checkbox = $("#home tbody").find("[type='checkbox']").not("[disabled]"),
+	    length = $checkbox.length,
+	    i=0;
+	var $checkboxAll1 = $("#ios .js-checkbox-all"),
+	    $checkbox1 = $("#ios tbody").find("[type='checkbox']").not("[disabled]"),
+	    length = $checkbox.length,
+	    i=0;
+	var $checkboxAll2 = $("#jmeter .js-checkbox-all"),
+	    $checkbox2 = $("#jmeter tbody").find("[type='checkbox']").not("[disabled]"),
+	    length = $checkbox.length,
+	    i=0;
+	    var $checkboxAll3 = $("#ejb .js-checkbox-all"),
+	    $checkbox3 = $("#ejb .form1>.row:eq(1)").find("[type='checkbox']").not("[disabled]"),
+	    length = $checkbox.length,
+	    i=0;
+	//启动icheck
+	
+	$('input').iCheck({
+	
+	   checkboxClass: 'icheckbox_minimal-blue',  // 注意square和blue的对应关系
+	
+	   radioClass: 'iradio_minimal-blue',
+	
+	// increaseArea: '20%' // optional
+	
+	 });
+	$("#squareinput input").iCheck({
+		checkboxClass: 'icheckbox_square-blue'
+	});
+	$(".form1 input").iCheck({
+		checkboxClass: 'icheckbox_square-blue'
+	});
+	//全选checkbox
+	$checkboxAll.on("ifClicked",function(event){
+	  if(event.target.checked){
+	    $checkbox.iCheck('uncheck');
+	    i=0;
+	  }else{
+	    $checkbox.iCheck('check');
+	    i=length;
+	  }
+	});
+	
+	$checkboxAll1.on("ifClicked",function(event){
+	  if(event.target.checked){
+	    $checkbox1.iCheck('uncheck');
+	    i=0;
+	  }else{
+	    $checkbox1.iCheck('check');
+	    i=length;
+	  }
+	});
+	
+	$checkboxAll2.on("ifClicked",function(event){
+	  if(event.target.checked){
+	    $checkbox2.iCheck('uncheck');
+	    i=0;
+	  }else{
+	    $checkbox2.iCheck('check');
+	    i=length;
+	  }
+	});
+	$checkboxAll3.on("ifClicked",function(event){
+	  if(event.target.checked){
+	    $checkbox3.iCheck('uncheck');
+	    i=0;
+	  }else{
+	    $checkbox3.iCheck('check');
+	    i=length;
+	  }
+	});
+	
+	//监听计数  懒人建站http://www.51xuediannao.com/
+	$checkbox.on('ifClicked',function(event){
+	  event.target.checked ? i-- : i++;
+	  if(i==length){
+	    $checkboxAll.iCheck('check');
+	  }else{
+	    $checkboxAll.iCheck('uncheck');
+	  }
+	})
+	$checkbox1.on('ifClicked',function(event){
+	  event.target.checked ? i-- : i++;
+	  if(i==length){
+	    $checkboxAll1.iCheck('check');
+	  }else{
+	    $checkboxAll1.iCheck('uncheck');
+	  }
+	})
+	$checkbox2.on('ifClicked',function(event){
+	  event.target.checked ? i-- : i++;
+	  if(i==length){
+	    $checkboxAll2.iCheck('check');
+	  }else{
+	    $checkboxAll2.iCheck('uncheck');
+	  }
+	})
+	$checkbox3.on('ifClicked',function(event){
+	  event.target.checked ? i-- : i++;
+	  if(i==length){
+	    $checkboxAll3.iCheck('check');
+	  }else{
+	    $checkboxAll3.iCheck('uncheck');
+	  }
+	})
+</script>
+<script type="text/javascript">
+//
+////$("#myTab>li>a").click(function(){
+//		var total=10000;
+//		var breaker=100;
+//		var turn=100/(total/breaker);
+//		var progress=0;
+//		var timer = setInterval(function(){
+//		    progress=progress+turn;
+//		    $(".progress-value").html(progress+"%");
+//		    $("#processbar").attr("style", "width:"+progress+"%");
+//		    if (progress>=100) {
+//		        clearInterval(timer);
+//		    }
+//		}, breaker);
+////	})
+
+
+</script>
+		</section>
+	</body>
+</html>
